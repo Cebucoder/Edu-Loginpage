@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*#0853C4*/
+
+
+/*remove white border*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+/*	change font style*/
+}
+
+.maincontainer{
+	width: 100%;
+	height: 100vh;
+	background: url("back.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+/*	put the item in the center*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*to create blur effect on background*/
+.overly{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	/* From https://css.glass */
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+/* 	*/
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/*form contanet*/
+.form-content{
+	width: 400px;
+	height: 500px;
+/*	change the background to white*/
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.6);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	flex-direction: column;
+}
+
+/*logo cont*/
+.logo-cont{
+	width: 100%;
+	height: 90px;
+/*	background: pink;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logo-cont label{
+	font-weight: bolder;
+	color: #fff;
+	font-size: 20px;
+}
+.logo{
+	margin-right: 10px;
+}
+
+.form-content input{
+	width: 100%;
+	height: 55px;
+	border-radius: 5px;
+	border: 1px solid #0853C4;
+	outline-color: #0853C4;
+	margin: 5px 0;
+	padding-left: 15px;
+	transition: 0.1s;
+}
+/*adding hover effect on input*/
+.form-content input:hover{
+	padding-left: 20px;
+	transition: 0.2s;
+
+}
+.form-content button{
+	width: 100%;
+	height: 55px;
+	border-radius: 50px;
+	background: #0853C4;
+	margin: 20px 0;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	transition: 0.1s;
+}
+/*adding hover effet on button*/
+.form-content button:hover{
+	background: #fff;
+	color: #0853C4;
+	border: 2px solid #0853C4;
+	transition: 0.2s;
+}
+.form-content span{
+	width: 100%;
+	height: 40px;
+	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	font-size: 14px;
+}
+.form-content a{
+	text-decoration: none;
+	color: #0853C4;
+}
+.form-content a:hover{
+	text-decoration: underline;
+}
+
+.social-icons{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+/*	background: pink;*/
+	padding: 0 30px;
+	margin-top: 40px;
+}
+.social-icons ion-icon{
+	font-size: 25px;
+	color: #fff;
+	transition: 0.1s;
+}
+/*lets add icon hover effect*/
+.social-icons ion-icon:hover{
+	transform: translateY(-3px);
+/*	transition: 0.3s;*/
+}
+
+
